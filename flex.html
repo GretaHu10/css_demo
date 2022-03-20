@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Float</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        /*导航栏*/
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 4px 5px;
+            background: grey;
+            color: white;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo>img {
+            height: 26px;
+            vertical-align: middle
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul>li {
+            padding: 4px 0.5em;
+        }
+
+
+
+        /*内容区*/
+        .y {
+            display: flex;
+            justify-content: center;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: nowrap;
+            min-width: 800px;
+            margin-top: 10px;
+        }
+
+        .content>aside {
+            width: 200px;
+            background: #999;
+        }
+
+        .content>main {
+            flex-grow: 1;
+            height: 300px;
+            background: #ccc;
+        }
+
+        .content>.ad {
+            width: 100px;
+            background: #000;
+        }
+
+        /*平均布局*/
+        .imgList {
+            display: flex;
+            width: 800px;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .imgList>.x {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -6px;
+            margin-left: -6px;
+
+        }
+
+        .imgList>.x>.image {
+            display: flex;
+            width: 191px;
+            height: 191px;
+            margin-right: 6px;
+            margin-left: 6px;
+            margin-bottom: 10px;
+            background: black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="" alt="LOGO">
+        </div>
+        <ul>
+            <li>登录</li>
+            <li>注册</li>
+            <li>设置</li>
+            <li>关于</li>
+        </ul>
+    </header>
+    <div class="y">
+        <div class="content">
+            <aside>这里有内容</aside>
+            <main>这是主要内容</main>
+            <div class="ad">广告</div>
+        </div>
+    </div>
+    <div class="imgList">
+        <div class="x">
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

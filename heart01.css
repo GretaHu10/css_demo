@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:boder-box;
+  }
+  #heart{
+    margin: 100px;
+    position: relative;
+    /* border: 1px solid black; */
+    /*左右两个半圆相对于父元素heart来定位，加一个边框便于直观感受定位*/
+    display: inline-block;
+    transition: all .5s;
+  }
+  #heart:hover{
+    transform: scale(1.2);
+  }
+  #heart>.left{ 
+    background: red;
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    border-radius: 50% 0 0 50%;/*圆形*/
+    position: absolute;
+    right: 100%;
+    bottom: 100%;/*左边半圆位于heart的左上方，相对于heart的最左最上*/
+    transform: rotate(45deg) translateX(30px);/*左边圆形要向右斜下方位移*/
+  }
+  #heart>.right{
+    background: red;
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    border-radius: 50% 50% 0 0;
+    position: absolute;
+    left: 100%;
+    bottom: 100%;
+    transform: rotate(45deg) translateY(30px);
+  }
+  #heart>.bottom{
+    background: red;
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    transform: rotate(45deg);
+  }
