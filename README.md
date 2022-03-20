@@ -10,3 +10,4 @@ css基础知识练习代码
   * animation制作无限次跳动[https://gretahu10.github.io/css_demo/heart02.html](https://gretahu10.github.io/css_demo/heart02.html)
 
 **css知识总结博客**
+[https://github.com/GretaHu10/Blog/blob/main/CSS.md](https://github.com/GretaHu10/Blog/blob/main/CSS.md)
